@@ -76,6 +76,7 @@ for (var d in dirs){
 	}
 	readFiles(dirs[d], function(filename, content) {
 	  data[dirs[d] + '/' + filename] = content;
+	  console.log(content)
 	}, function(err) {
 	  //throw err;
 	});
