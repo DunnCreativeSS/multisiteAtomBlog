@@ -42,15 +42,16 @@ function getDirectories(path) {
 var files = {}
 var dirs = getDirectories('./')
 for (var d in dirs){
+	if (dirs[d] != 'git' && dirs[d] != 'node_modules'){
 	if (files[dirs[d]] == undefined){
 		files[dirs[d]] = [];
 	}
 	readFiles(dirs[d], function(filename, content) {
-	  data[dirs[d] + filename] = content;
+	  data[dirs[d] + '/' + filename] = content;
 	}, function(err) {
 	  throw err;
 	});
-
+	}
 }
  
 // Declare the elements and attributes up-front
