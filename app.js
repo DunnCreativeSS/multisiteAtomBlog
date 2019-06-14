@@ -39,7 +39,7 @@ for (var d in data){
     .endElement()
 }
 }
-w
+w.endElement()
 .endDocument();
 res.send(msg);
  });
