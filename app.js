@@ -35,7 +35,7 @@ for (var d in data){
       .startElement(link).addAttribute(href, json.link).endElement()
       .startElement(id).addText(json.id).endElement()
       .startElement(updated).addText(json.updated).endElement()
-      .startElement(description).addText(json.description).endElement()
+      .startElement(summary).addText(json.summary).endElement()
     .endElement()
 }
 }
@@ -100,6 +100,6 @@ var author  = w.declareElement(ns, 'author');
 var name    = w.declareElement(ns, 'name');
 var id      = w.declareElement(ns, 'id');
 var entry   = w.declareElement(ns, 'entry');
-var description = w.declareElement(ns, 'description');
+var summary = w.declareElement(ns, 'summary');
  
 var href    = w.declareAttribute('href');
