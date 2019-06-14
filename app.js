@@ -49,7 +49,7 @@ for (var d in dirs){
 	readFiles(dirs[d], function(filename, content) {
 	  data[dirs[d] + '/' + filename] = content;
 	}, function(err) {
-	  throw err;
+	  //throw err;
 	});
 	}
 }
