@@ -18,9 +18,9 @@ console.log(data);
 	
 w.startDocument()
   .startElement(feed)
-    .startElement(title).addText(json.title).endElement()
-    .startElement(link).addAttribute(href, json.link).endElement()
-    .startElement(updated).addText(json.updated).endElement()
+    .startElement(title).addText('multisite').endElement()
+    .startElement(link).addAttribute(href, 'http://google.com').endElement()
+    .startElement(updated).addText("2019-06-14T16:45:02Z").endElement()
 for (var d in data){
 	var json = JSON.parse(data[d])
 	console.log(data[d])
