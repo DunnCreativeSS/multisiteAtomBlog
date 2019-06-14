@@ -18,7 +18,6 @@ w
     .startElement(title).addText('test').endElement()
     .startElement(link).addAttribute(href, 'test').endElement()
     .startElement(updated).addText('test').endElement()
-  .endElement()
     .startElement(author)
       .startElement(name).addText(json.name).endElement()
     .endElement()
