@@ -17,7 +17,7 @@ var site = req.query.site
 w.startDocument()
 w
   .startElement(feed)
-    .startElement(id).addText('123').endElement()
+    .startElement(id).addText('tag:techvoices.club,2019:storyfeed').endElement()
     .startElement(title).addText('test').endElement()
     .startElement(link).addAttribute(href, 'test').endElement()
     .startElement(updated).addText('test').endElement()
