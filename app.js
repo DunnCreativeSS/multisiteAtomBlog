@@ -25,7 +25,7 @@ for (var d in data){
 	var json = JSON.parse(data[d])
 	console.log(data[d])
 	w.
-    .startElement(author)
+    startElement(author)
       .startElement(name).addText(json.name).endElement()
     .endElement()
     .startElement(id).addText(json.id).endElement()
