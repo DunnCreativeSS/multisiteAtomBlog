@@ -36,6 +36,7 @@ for (var d in data){
       .startElement(summary).addText(json.summary).endElement()
     .endElement()
 }
+w
 .endDocument();
 res.send(msg);
  });
