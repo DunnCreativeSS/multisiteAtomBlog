@@ -10,7 +10,7 @@ w.on('data', function(data) {
   msg = (data);
 })
  app.get('/', function(req, res) {
-res.send(data);
+res.send(msg);
  });
  app.listen(process.env.PORT || 7777, function() {});
 
