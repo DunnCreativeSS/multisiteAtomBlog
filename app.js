@@ -29,8 +29,8 @@ for (var d in data){
 	if (json.site == site){
 	console.log(json)
 	w
-    .startElement(id).addText(json.id).endElement()
     .startElement(entry)
+    .startElement(id).addText(json.id).endElement()
       .startElement(title).addText(json.title).endElement()
       .startElement(link).addAttribute(href, json.link).endElement()
       .startElement(id).addText(json.id).endElement()
