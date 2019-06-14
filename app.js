@@ -15,6 +15,7 @@ res.send(data);
  app.listen(process.env.PORT || 7777, function() {});
 
  function readFiles(dirname, onFileContent, onError) {
+	 if (dirname != '.git' && dirname != 'node_modules'){
   fs.readdir(dirname, function(err, filenames) {
     if (err) {
       onError(err);
@@ -30,6 +31,7 @@ res.send(data);
       });
     });
   });
+	 }
 }
 var data = {};
 
