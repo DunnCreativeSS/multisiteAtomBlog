@@ -21,6 +21,7 @@ w.startDocument()
     .startElement(title).addText('multisite').endElement()
     .startElement(link).addAttribute(href, 'http://google.com').endElement()
     .startElement(updated).addText("2019-06-14T16:45:02Z").endElement()
+.endElement()
 for (var d in data){
 	var json = JSON.parse(data[d])
 	console.log(data[d])
