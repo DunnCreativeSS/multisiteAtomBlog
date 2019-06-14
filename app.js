@@ -6,12 +6,13 @@ var fs = require('fs');
 
 var w = new genx.Writer();
 let msg = "";
-msg = ("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
- 
+
 w.on('data', function(data) {
   msg += (data);
 })
  app.get('/', function(req, res) {
+	 msg = ("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
+ 
 w.startDocument()
 w
   .startElement(feed)
