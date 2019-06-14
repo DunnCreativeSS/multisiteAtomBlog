@@ -17,7 +17,6 @@ var site = req.query.site
 w.startDocument()
 w
   .startElement(feed)
-    .startElement(id).addText('123').endElement()
     .startElement(title).addText('test').endElement()
     .startElement(link).addAttribute(href, 'test').endElement()
     .startElement(updated).addText('test').endElement()
@@ -33,7 +32,6 @@ for (var d in data){
     .startElement(entry)
       .startElement(title).addText(json.title).endElement()
       .startElement(link).addAttribute(href, json.link).endElement()
-      .startElement(id).addText(json.id).endElement()
       .startElement(updated).addText(json.updated).endElement()
       .startElement(description).addText(json.description).endElement()
     .endElement()
